@@ -2,3 +2,6 @@
 __pycache__
 *cookies.txt
 .tox/
+build/
+dist/
+.idea
