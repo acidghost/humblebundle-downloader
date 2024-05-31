@@ -55,7 +55,7 @@ def update_csv_cache(queue: multiprocessing.JoinableQueue):
             try:
                 cache_data: CsvCacheData = queue.get(True, 15.0)
             except:
-                pass
+                continue
             if "kill" == cache_data['order_id']:
                 queue.task_done()
                 break
